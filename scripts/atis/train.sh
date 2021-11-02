@@ -22,7 +22,7 @@ mkdir -p logs/atis
 echo commit hash: `git rev-parse HEAD` > logs/atis/${model_name}.log
 
 python -u exp.py \
-    --cuda \
+#    --cuda \
     --seed ${seed} \
     --mode train \
     --batch_size 10 \
